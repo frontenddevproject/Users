@@ -1,0 +1,65 @@
+body{
+   background: linear-gradient(90deg, #afb5be, #112d9c);
+   font-family: Arial;
+}
+input{
+   height: 26px;
+   margin-right: 15px;
+   font-size: 20px;
+}
+input::placeholder{
+   font-size: 16px;
+}
+#create{
+   line-height: 26px;
+   font-size: 20px;
+   cursor: pointer;
+}
+#create:hover{
+   background-color: #808080;
+
+}
+#create:active{
+   background-color: #b9b9b9;
+}
+
+#users-section{
+   display: flex;
+   flex-wrap: wrap;
+}
+.user-card{
+   position: relative;
+   background-color: #faebd7;
+   border: 1px solid #000;
+   border-radius: 20px;
+   margin: 20px 10px;
+   font-size: 20px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   width: 200px;
+   min-height: 150px;
+   padding: 15px;
+   box-shadow: 0 0 10px #000;
+}
+.user-card span{
+   margin: 5px 0;
+}
+.deleteButton{
+   position: absolute;
+   background-color: transparent;
+   width:25px;
+   height: 25px;
+   border: 1px solid transparent;
+   border-radius: 50%;
+   font-size: 18px;
+   font-weight: 700;
+   right: 7px;
+   top:3px;
+   cursor: pointer;
+   transition: all 0.5s;
+   box-sizing: border-box;
+}
+.deleteButton:hover{
+   border: 1px solid #000;
+
+}
